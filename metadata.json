@@ -1,0 +1,6 @@
+{
+  "name": "The Memory Vault: COA Adventure Game",
+  "description": "An interactive computer organization and architecture adventure game exploring memory systems, hierarchy, main memory, secondary storage, cache mapping, and cache coherence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

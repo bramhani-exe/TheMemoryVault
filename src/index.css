@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cream: #FAF8F5;
+    --bg-cream-soft: #FFFDF9;
+    --bg-cream-dark: #ECE5D8;
+    --border-neutral: #DDD5C3;
+    --text-primary: #1E3827;
+    --text-secondary: #4A5B50;
+    --text-muted: #6E7E73;
+    --sage-light: #E4ECE5;
+    --sage-mid: #94AA99;
+    --sage-deep: #43634E;
+    --botanical-dark: #1E3827;
+    --brass-gold: #C29B48;
+    --brass-bright: #E5BE65;
+    --brass-dark: #8F6F28;
+    --teal-accent: #236773;
+  }
+
+  body {
+    background-color: var(--bg-cream);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .font-serif-title {
+    font-family: 'Cinzel', Georgia, serif;
+    letter-spacing: 0.02em;
+  }
+
+  .font-mono-code {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+/* Keyframes for smooth animations */
+@keyframes keyFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-4px) rotate(2deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.6; filter: drop-shadow(0 0 4px rgba(194, 155, 72, 0.4)); }
+  50% { opacity: 1; filter: drop-shadow(0 0 12px rgba(194, 155, 72, 0.8)); }
+}
+
+@keyframes doorOpen {
+  from { transform: perspective(900px) rotateY(0deg); }
+  to { transform: perspective(900px) rotateY(-88deg); }
+}
+
+@keyframes keyUnlock {
+  0% { transform: scale(0.6) translateY(20px) rotate(-15deg); opacity: 0; }
+  40% { transform: scale(1.15) translateY(-5px) rotate(0deg); opacity: 1; }
+  75% { transform: scale(1) translateY(0px) rotate(45deg); opacity: 1; }
+  100% { transform: scale(0.9) translateY(0px) rotate(90deg); opacity: 0.9; }
+}
+
+@keyframes keyEnterLock {
+  0% { transform: scale(0.8) translate(0, -30px); opacity: 0; }
+  40% { transform: scale(1) translate(0, 0); opacity: 1; }
+  70% { transform: scale(1) translate(0, 0) rotate(90deg); opacity: 1; }
+  100% { transform: scale(0.8) translate(0, 0) rotate(180deg); opacity: 0; }
+}
+
+@keyframes doorwayZoom {
+  0% { transform: scale(1); filter: brightness(1); }
+  60% { transform: scale(1.12); filter: brightness(1.25); }
+  100% { transform: scale(1.22); filter: brightness(1.6); opacity: 0; }
+}
+
+@keyframes panelFadeOut {
+  from { opacity: 1; transform: scale(1); filter: blur(0px); }
+  to { opacity: 0; transform: scale(0.96); filter: blur(4px); pointer-events: none; }
+}
+
+@keyframes panelFadeIn {
+  from { opacity: 0; transform: scale(0.96); filter: blur(4px); }
+  to { opacity: 1; transform: scale(1); filter: blur(0px); }
+}
+
+.animate-key-float {
+  animation: keyFloat 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+.animate-door-open {
+  transform-origin: left center;
+  animation: doorOpen 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-key-unlock {
+  animation: keyUnlock 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-key-enter-lock {
+  animation: keyEnterLock 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-doorway-zoom {
+  animation: doorwayZoom 1.0s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-panel-fade-out {
+  animation: panelFadeOut 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-panel-fade-in {
+  animation: panelFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-cream-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-neutral);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sage-mid);
+}

@@ -1,0 +1,477 @@
+MASTER PROMPT: THE MEMORY VAULT
+A Complete Computer Organization and Architecture Adventure Game
+Build a complete, polished, interactive browser game called THE MEMORY VAULT, based on Module 5: Memory Organization from my Computer Organization and Architecture (COA) syllabus.
+This must be a genuinely playable, immersive educational escape-room adventure, not a quiz website with a decorative background. Players should explore a world, discover locations, solve original puzzles, collect keys, unlock doors, enter rooms, find treasure, and progressively master the entire syllabus.
+The result should feel like a carefully crafted indie puzzle game that happens to teach computer architecture.
+Most importantly, preserve the entire visual identity and all valuable features specified below. Improve the game mechanics and progression as described, but do not unnecessarily redesign, remove, or simplify existing features.
+1. OFFICIAL SYLLABUS AND EDUCATIONAL SCOPE
+Use the following syllabus as the authoritative academic foundation.
+Module No. 5: Memory Organization | 10 Hours
+Memory System: Basic Concepts, Memory hierarchy, Main Memory, Secondary storage, Cache memory mapping, cache coherence.
+Cover the entire syllabus through the game. Do not restrict the experience to only cache memory or memory hierarchy.
+Organize the world into six major locations, each representing one syllabus topic:
+The Memory Foundations: Memory system and basic concepts.
+The Hierarchy Gardens: Memory hierarchy.
+The Main Memory District: Main memory.
+The Archive of Permanence: Secondary storage.
+The Cache Mapping Labyrinth: Cache memory mapping.
+The Coherence Citadel: Cache coherence.
+You may create imaginative names for the locations, buildings, characters, objects, and treasure within these areas, provided the underlying academic concepts remain accurate.
+Each location must contain five unique, challenging, interactive puzzles. Therefore, the complete game must have at least 30 substantive puzzles, with 30 keys to collect and 30 individual puzzle doors to unlock.
+The game must not use a predetermined list of simple questions supplied by this prompt. Instead, independently design creative, varied, syllabus-aligned puzzles that test understanding, reasoning, calculations, analysis, and problem-solving.
+Do not generate 30 repetitive multiple-choice questions and call them puzzles.
+2. THE CENTRAL GAME CONCEPT
+The player awakens inside an abandoned memory research facility. Its central vault has been sealed, its memory systems are corrupted, and its treasures are inaccessible.
+The player discovers an illustrated map of the facility. Six mysterious locations appear on the map, each containing five locked chambers.
+The objective is to explore every location, solve its five puzzles, collect the five keys, and unlock the final treasure chamber within that location.
+Every correctly solved puzzle rewards the player with a physical-looking key. The key must visibly travel into the player's inventory or key collection.
+Each key opens the corresponding locked door. The door unlocks, swings open, and the player transitions into the newly accessible chamber. Inside, another locked door awaits the next puzzle.
+After all five chambers in a location are cleared, the player unlocks that location's treasure room, discovers a topic-themed reward, and receives a meaningful learning summary.
+The player can then return to the world map and select another location.
+After completing all six locations, the player gains access to the ultimate Memory Vault, where all six location rewards are brought together to restore the central memory system and reveal the final treasure.
+The entire experience must feel like an interconnected adventure, not six disconnected quizzes.
+3. THE WORLD MAP: THE HEART OF THE GAME
+The map must be the first major interactive screen after the opening title screen.
+Design a beautiful illustrated world map with six distinct, clickable locations. Each location should visually represent its topic using architectural details, scenery, machinery, and environmental storytelling.
+For example, the world could contain a garden of ascending memory tiers, a main-memory research district, a storage archive, a cache-routing maze, and a processor-coherence fortress. Invent the final world and its details creatively.
+These are design directions, not restrictions. Create a coherent, original world that fits the existing visual theme.
+Map requirements
+Display all six locations together on one visually engaging map.
+Give every location its own illustrated building, house, laboratory, tower, archive, or other suitable structure.
+Clearly identify each location's topic.
+Make each location genuinely clickable.
+Show locked, available, and completed states using subtle visual changes.
+Show the number of keys collected at each location, such as 2/5.
+Show overall progress across all 30 puzzles.
+Display the final Memory Vault as a locked destination until all six locations have been completed.
+Add a small, elegant legend explaining the map states.
+Include a clear way to return to the map from every location.
+Preserve game progress when moving between the map, locations, and chambers.
+Do not require the player to restart a location merely because they return to the map.
+The player should be able to choose which location to explore first, unless a short introductory tutorial is necessary to explain the controls. Do not unnecessarily force a rigid sequence through the six topics.
+A completed location should remain completed. Its five keys, treasure, and learning journal entry must remain saved throughout the session.
+The map should feel like an actual game-world interface rather than a conventional website grid of six cards.
+4. THE FIVE-CHAMBER PROGRESSION SYSTEM
+Every location contains five individual puzzle chambers followed by one treasure chamber.
+The progression must follow this exact structural pattern:
+Enter location → Solve puzzle → Collect key → Unlock door → Animate entry into next chamber → Solve next puzzle.
+Repeat this process for all five puzzle chambers.
+After the fifth puzzle:
+Collect fifth key → Unlock final location door → Enter treasure chamber → Reveal treasure → Complete topic → Return to world map.
+Each chamber should feel like a physical space inside the location. Use the existing illustrated environment, doors, props, locks, and animations to make the experience tangible.
+Door mechanics
+Every puzzle chamber must have a visible locked door.
+When a player enters a chamber, the environment should communicate that another locked door blocks progress.
+The player explores the chamber and interacts with its objects to uncover and solve the puzzle.
+Upon a correct solution:
+Confirm the solution with a restrained, satisfying visual response.
+Generate or reveal the earned key.
+Animate the key moving into the player's inventory.
+Update the key counter and location progress.
+Unlock the chamber's door.
+Animate the door opening.
+Transition the player into the next chamber.
+Do not simply replace the question text with the next question. The player should experience a real sense of movement through the world.
+Use elegant transitions such as a gentle camera pan, a door-opening animation, a short fade, or a sliding room transition.
+Keep transitions brief and purposeful. They must never delay gameplay unnecessarily.
+Allow the player to revisit completed chambers to review their concepts, without farming duplicate keys or points.
+5. DESIGN THE PUZZLES YOURSELF
+This is one of the most important requirements.
+Do not copy predetermined puzzles from this prompt. Invent the actual puzzle content independently, using the syllabus to determine what should be tested.
+Every location must contain five distinct puzzles, with the puzzle types chosen to suit the topic.
+Use a creative mixture of mechanics such as:
+Physical object manipulation.
+Drag-and-drop arrangements.
+Environmental clues.
+Interactive machinery.
+Component assembly.
+Circuit or system diagrams.
+Memory organization challenges.
+Numerical and address calculations.
+Data-flow routing.
+Logical deduction.
+Pattern discovery.
+Sorting and classification.
+Finding and correcting a faulty system.
+Matching components to their functions.
+Unlocking mechanisms using discovered information.
+Multi-step reasoning challenges.
+Hidden clues that require understanding the academic concepts.
+These are examples of possible mechanics, not a fixed checklist. Choose the best mechanic for each puzzle and invent additional mechanics wherever useful.
+A puzzle may combine several concepts if doing so creates a coherent challenge.
+Difficulty and originality
+The puzzles must be challenging enough for a college-level COA assignment while remaining fair and solvable.
+Use a deliberate progression within each location:
+Puzzle 1 introduces or tests the essential concepts.
+Puzzle 2 requires applying those concepts.
+Puzzle 3 introduces more involved reasoning.
+Puzzle 4 combines multiple concepts or requires deeper analysis.
+Puzzle 5 serves as a challenging culmination of the location's topic.
+This progression is a guideline, not an excuse to make every location follow an identical formula.
+Avoid excessive simplicity, repetitive question formats, random guessing, arbitrary riddles unrelated to the syllabus, and puzzles that depend on information never taught or discoverable in the game.
+The player must solve puzzles through knowledge and reasoning rather than guessing passwords.
+Whenever possible, make the puzzle emerge naturally from the environment. A broken memory machine should require the player to understand memory. A storage archive should involve storage concepts. A cache laboratory should use cache-related mechanics.
+Puzzle interaction and feedback
+Accept answers only when they satisfy the intended solution.
+For numerical answers, handle reasonable input formatting differences where appropriate.
+For word answers, ignore irrelevant capitalization and surrounding whitespace.
+For drag-and-drop puzzles, validate the actual arrangement.
+For multi-step puzzles, validate the necessary steps instead of accepting a single arbitrary click.
+Never award a key for an incorrect answer.
+Never reveal the answer immediately after a wrong attempt.
+Give concise, contextual feedback explaining what the player should reconsider.
+Provide a progressive hint system.
+Allow the player to retry without restarting the chamber.
+Make every puzzle keyboard-accessible where practical.
+Ensure touch interactions work on mobile devices.
+The game should teach through discovery without turning every chamber into a lecture.
+6. COMPLETE COVERAGE OF ALL SIX SYLLABUS TOPICS
+Use these academic boundaries when inventing the puzzles.
+Location 1: Memory System and Basic Concepts
+Explore the foundations of computer memory.
+Include relevant concepts such as memory's purpose, the role of memory in computer systems, storage capacity and units, memory access, read/write operations, latency, bandwidth, volatile versus non-volatile memory, and other relevant basic concepts.
+Choose which concepts are most appropriate for the five puzzles.
+Make the player interact with the memory system rather than simply memorizing definitions.
+Location 2: Memory Hierarchy
+Explore how different storage levels are organized according to properties such as speed, capacity, cost per bit, and proximity to the processor.
+Include relevant levels such as registers, cache, main memory, and secondary storage, together with their relationships.
+Invent environmental puzzles that require the player to understand why a hierarchy exists and how its levels cooperate.
+Be academically precise. Avoid oversimplifying the hierarchy in ways that introduce incorrect claims.
+Location 3: Main Memory
+Explore the structure, purpose, operation, and relevant types of main memory.
+Include applicable concepts such as RAM, SRAM, DRAM, memory addressing, read/write operations, addressable locations, and memory capacity calculations.
+Select relevant concepts and invent puzzles that require their application.
+Keep the scope appropriate to the stated syllabus. Do not introduce unrelated advanced topics merely to make the game appear more technical.
+Location 4: Secondary Storage
+Explore persistent data storage and the characteristics of secondary-storage devices.
+Include relevant concepts such as non-volatility, storage capacity, access characteristics, and the differences between suitable storage technologies, including HDDs and SSDs where relevant.
+Create puzzles around the properties and behavior of storage systems, not simply device-name memorization.
+Location 5: Cache Memory Mapping
+Explore how main-memory blocks map into cache.
+Include the applicable mapping techniques: direct mapping, fully associative mapping, and set-associative mapping.
+Where relevant, incorporate cache lines, blocks, tags, index fields, offset fields, address decomposition, and mapping calculations.
+Invent puzzles involving physical or logical cache structures, address-routing challenges, and other suitable mechanics.
+All calculations must be correct. Define any assumptions needed to solve a puzzle, including address size, block size, cache-line count, and mapping rules.
+Do not confuse memory blocks with cache lines or incorrectly apply mapping formulas.
+Location 6: Cache Coherence
+Explore the problem of maintaining consistent data when multiple processors or caches hold copies of shared information.
+Include relevant concepts such as stale cached data, updates, shared data, and appropriate coherence mechanisms or protocols within the syllabus's intended depth.
+Create interactive scenarios in which the player must reason about the state of cached copies and how consistency can be restored.
+Avoid teaching incorrect rules about when a cache line becomes invalid, modified, shared, or synchronized.
+Introduce protocol-specific state names or transition rules only when the relevant protocol has been clearly explained within the game.
+Coverage verification
+Before considering the game complete, create an internal checklist mapping every major syllabus topic to the actual puzzles that teach or test it.
+Verify that all six locations contain five substantive puzzles each, that the puzzle content is accurate, and that no syllabus topic is accidentally omitted.
+The final experience must cover the complete supplied Module 5 syllabus, not merely its most visually interesting topics.
+7. THE ORIGINAL VISUAL IDENTITY MUST REMAIN UNCHANGED
+Do not change the original aesthetic.
+The existing design direction is a major part of this project, and the new map-based game must preserve it.
+Color palette
+Use the original refined light palette:
+Warm cream.
+Soft white.
+Muted sage green.
+Deep botanical green.
+Restrained teal accents.
+Brass and muted gold for keys, locks, rewards, and special details.
+Gentle neutral tones for borders, surfaces, and secondary text.
+The world should feel calm, handcrafted, sophisticated, inviting, and quietly magical.
+Do not introduce an unrelated visual theme for the map or any of the six locations. Every location must feel as though it belongs to the same world.
+Visual atmosphere
+Create an illustrated game environment with details such as:
+Arched doors.
+Wooden or painted doors with visible locks.
+Brass keys.
+Cozy laboratories.
+Shelves and storage objects.
+Plants and subtle natural details.
+Workbenches and machinery.
+Interactive environmental props.
+A supply chest and inventory.
+Illustrated map landmarks.
+Small visual discoveries hidden throughout the rooms.
+Use original CSS illustrations, SVG artwork, carefully crafted shapes, or appropriate non-AI-slop assets.
+The environment must feel like a real place the player explores, rather than a flat collection of UI panels.
+The map should use the same cream-and-sage visual language as the rooms.
+Typography
+Use sophisticated, readable typography with a clear hierarchy.
+Use a distinctive display serif for selected headings if appropriate, paired with a clean, highly readable sans-serif for instructions, labels, and interactive elements.
+Maintain good spacing and consistent alignment.
+Avoid oversized headings that consume the screen or make the game feel like a generic landing page.
+Buttons and controls
+Use tasteful rectangular or subtly rounded controls that fit the handcrafted environment.
+Maintain consistent sizing, spacing, borders, hover states, focus states, and disabled states.
+Avoid exaggerated rounding and oversized pill-shaped buttons.
+Lighting and texture
+Use restrained shadows, soft lighting, subtle paper or material textures, and depth to give the illustrated environment a crafted feel.
+Do not clutter the interface with unnecessary effects.
+The final design should remain visually elegant on both desktop and mobile screens.
+8. WEBSITE STRUCTURE AND SCREEN DESIGN
+Build the complete experience as a coherent application with the following screens.
+Screen A: Opening screen
+Create an atmospheric opening screen for THE MEMORY VAULT.
+Include the game title, a concise story premise, and a clear Start Adventure control.
+The opening should establish the mystery of the sealed memory facility without lengthy exposition.
+Use a subtle introductory animation, then allow the player to begin immediately.
+Include a way to access instructions and accessibility settings.
+Screen B: World map
+Display all six topic locations and the locked central Memory Vault.
+Show each location's progress, availability, and completion state.
+Include an overall progress indicator and a compact status area.
+The map is the primary navigation hub.
+Screen C: Location entrance
+When a player selects a location, show an entrance scene that introduces its theme and academic topic.
+Display the location name, a concise premise, the number of puzzles, the number of keys collected, and the location's current progress.
+Provide a clear Enter Location control.
+Preserve the map's visual style and the established game-world aesthetic.
+Screen D: Interactive puzzle chambers
+Each chamber must contain:
+An illustrated room environment.
+A visible locked exit door.
+Relevant interactive objects.
+A puzzle-specific interface integrated into the room.
+The current puzzle number.
+The number of keys collected at the location.
+A progress indicator for the five chambers.
+An inventory or tool panel.
+A hint control.
+A way to inspect relevant clues and objects.
+A way to return to the map without losing progress.
+Do not force the player to scroll through a long page to solve a single puzzle.
+The puzzle interface must fit naturally within the room environment.
+Screen E: Treasure chamber
+After the fifth key opens the final door in a location, reveal a dedicated treasure room.
+The treasure should be thematically connected to the topic just completed.
+Examples of possible rewards include a restored memory artifact, a rare blueprint, an ancient storage relic, a cache crystal, or another original invention.
+These are examples, not mandatory assets. Invent a coherent reward system that connects all six locations.
+The treasure reveal should feel rewarding without relying on excessive confetti or distracting effects.
+Include a concise educational summary explaining the concepts the player has just mastered.
+Provide a clear Return to Map control.
+Screen F: Final Memory Vault
+Once all six location treasures have been collected, unlock the central Memory Vault.
+Create a special final environment that combines visual motifs from the six completed locations.
+Require the player to use the collected rewards meaningfully to restore the central memory system. Design this final sequence creatively while keeping it fair, accessible, and educational.
+The final challenge should synthesize concepts from the entire module rather than introduce unrelated material.
+After successful completion, display a polished victory screen showing:
+The completion of all six locations.
+The 30 puzzle keys collected.
+The six treasures recovered.
+The player's final score.
+The total number of hints used.
+A concise summary of the topics explored.
+A way to revisit the map.
+A way to replay the adventure.
+Do not fabricate achievements, scores, or completion statistics. Every displayed value must be derived from actual gameplay.
+9. INVENTORY AND SUPPLY CHEST
+Preserve the original supply-chest and inventory concept.
+Include a beautifully illustrated chest or storage station where players can inspect collected tools, clues, and other useful objects.
+The inventory must be functional, not decorative.
+Items should have clear names, descriptions, and appropriate interactions.
+Invent useful tools that fit the game's world and mechanics, such as a memory lens, address decoder, storage key, diagnostic instrument, or other relevant objects.
+Only provide tools when they have a real gameplay purpose.
+Items may help reveal clues, inspect an object, interpret a diagram, or interact with a puzzle.
+Do not make tools automatic answer buttons. The player must still understand the relevant concept and solve the challenge.
+Show clear visual feedback when an item is selected, used, or unavailable.
+Prevent incorrect or irrelevant item combinations from breaking the game.
+Keep the inventory persistent when moving between chambers and locations.
+10. LEARNING JOURNAL
+Preserve the original learning-journal feature and integrate it into the new location-based progression.
+Each completed puzzle should add a short, useful entry to the journal.
+Each completed location should unlock a concise topic summary.
+The journal must explain the relevant concepts accurately and reinforce what the player learned during the adventure.
+Use readable explanations, small diagrams where helpful, and clear terminology.
+The journal must not become a long textbook that interrupts the gameplay.
+Allow players to revisit completed concepts whenever they want.
+The journal's content should be generated from the actual puzzle topics and checked for academic accuracy.
+11. PROGRESS, SCORING, AND REPLAYABILITY
+Implement a consistent scoring system.
+Use a base reward of 100 points for a correctly completed puzzle, with appropriate deductions for hint usage and other meaningful assistance.
+Preserve the original idea of a five-point hint penalty, unless testing demonstrates that a small adjustment is necessary for consistency.
+Do not penalize players merely for exploring the room, inspecting objects, or retrying a puzzle.
+The scoring system must be transparent.
+Track:
+Total puzzles completed.
+Keys collected.
+Locations completed.
+Treasures recovered.
+Hints used.
+Current score.
+Overall completion percentage.
+All statistics must reflect real game state.
+Prevent duplicate rewards from revisiting completed chambers.
+Provide a replay option that deliberately resets the game, with a confirmation step before clearing progress.
+Where practical, save progress locally so the player can refresh the browser or return later without losing the adventure.
+Do not claim that progress is permanently saved or synchronized across devices unless that functionality has actually been implemented.
+12. HINT SYSTEM
+Implement a progressive, two-level hint system for every puzzle.
+Hint level 1: Provide a gentle nudge toward the relevant concept or observation.
+Hint level 2: Provide a more specific clue about the reasoning or procedure required.
+Hints must not immediately reveal the final answer.
+The hints must be written specifically for each puzzle rather than generated as generic instructions such as "Try again."
+Display the hint cost before the player requests a hint.
+Apply the appropriate penalty to the actual score.
+Allow the player to close the hint panel and continue exploring the chamber.
+Ensure that hints remain available after revisiting a puzzle.
+Do not require a player to use hints to progress.
+13. ANIMATION AND GAME FEEL
+Preserve the original restrained, polished animation style.
+Implement meaningful animations for:
+The opening screen.
+Map location selection.
+Location entrances.
+Door unlocking and opening.
+Transitions between chambers.
+Key collection and inventory updates.
+Supply-chest opening.
+Object pickup and inspection.
+Puzzle-specific interactions.
+Correct and incorrect answers.
+Progressive hint reveals.
+Treasure discoveries.
+Location completion.
+The final Memory Vault restoration.
+The final victory screen.
+Animations must support the player's understanding of what happened.
+Use subtle motion, easing, depth, and visual feedback rather than constant movement.
+Avoid excessive scrolling effects, flashy transitions, long loading animations, or animation that prevents the player from interacting with the game.
+Support reduced-motion preferences and provide a usable experience even when animations are disabled.
+14. RESPONSIVE DESIGN
+The game must work properly on both laptops and mobile devices.
+On laptops, take advantage of the available space to show the illustrated environment, puzzle controls, and inventory together wherever appropriate.
+On mobile, rearrange the layout intelligently without shrinking desktop elements until they become unreadable.
+Make the world map usable on touchscreens.
+Ensure doors, objects, controls, inventory items, and puzzle elements have sufficiently large touch targets.
+Avoid horizontal overflow, clipped controls, overlapping panels, and text that becomes too small to read.
+Ensure all puzzles remain solvable on mobile, including drag-and-drop interactions. Provide an alternative interaction method when dragging is unsuitable for touch or keyboard users.
+The layout should remain polished at common phone, tablet, and laptop widths.
+15. TECHNICAL IMPLEMENTATION
+Build a complete, functional, self-contained browser game.
+Prefer:
+HTML for semantic structure.
+CSS for the visual system, layouts, and animations.
+Vanilla JavaScript for game logic and interactions.
+Use a framework only if the development environment genuinely requires it. Do not add complexity simply to make the implementation look sophisticated.
+The game should run locally in a modern browser and be straightforward to deploy as a static website.
+Do not require a backend, paid API, external AI service, database subscription, or account creation for the core game.
+All puzzles, progression, scoring, animations, inventory behavior, and rewards must work without a network connection after the game assets have loaded.
+Organize the code clearly. Keep puzzle data, location definitions, scoring rules, state management, and UI rendering logically separated.
+Use reusable components or functions for repeated systems such as doors, keys, puzzle validation, progress tracking, hints, and treasure rewards.
+Avoid a giant, unmaintainable block of JavaScript.
+Game-state integrity
+Implement a reliable state model that tracks each location and each puzzle.
+The game must correctly distinguish between:
+A location that has not been discovered.
+A location that is available.
+A location currently being explored.
+A puzzle that is incomplete.
+A puzzle that has been solved.
+A key that has been collected.
+A door that has been unlocked.
+A location whose treasure has been recovered.
+The final vault that is still locked.
+The completed final adventure.
+Make state transitions explicit and predictable.
+Do not let a player unlock a door without satisfying its associated puzzle.
+Do not let a player collect the same key repeatedly.
+Do not unlock the final vault until all six locations are complete.
+Do not allow navigation or a browser refresh to corrupt progress.
+Provide safe fallbacks for invalid state and unexpected interactions.
+16. ACADEMIC ACCURACY AND QUALITY ASSURANCE
+Correctness is more important than visual spectacle.
+Verify all technical explanations, diagrams, calculations, answer-validation rules, hints, and puzzle solutions.
+In particular:
+Use consistent memory units and distinguish bits from bytes.
+Make address calculations internally consistent.
+Define the assumptions required for cache calculations.
+Ensure mapping results agree with the stated cache configuration.
+Distinguish main memory from secondary storage.
+Explain volatile and non-volatile behavior correctly.
+Avoid misleading comparisons between memory technologies.
+Explain cache coherence in a way consistent with the mechanisms being taught.
+Never accept an incorrect solution merely because it resembles the intended answer.
+Never produce a puzzle that has no valid solution.
+Never produce contradictory clues.
+Never display a key as collected before the puzzle has actually been solved.
+Before finishing, test every one of the 30 puzzles.
+Verify both the correct-answer and incorrect-answer paths.
+Verify that all five chambers in each location can be completed in sequence.
+Verify that each treasure chamber unlocks at the right time.
+Verify that the final Memory Vault becomes available only after the required locations are complete.
+Verify that replay resets the game correctly.
+Verify that progress survives a page refresh when local saving is implemented.
+Verify that the game works on desktop and mobile.
+Do not declare the game complete merely because the screens look good. It is complete only when the gameplay works.
+17. PROFESSIONAL WEBSITE QUALITY REQUIREMENTS
+I do not want my website to look vibecoded, so never use purple gradients, pill-shaped buttons, fake reviews or fake metrics. No vague hero texts, emoji icons, em dashes, or over-the-top scroll animation. We do not launch until we have connected a custom domain, added a favicon, removed the Made with AI tag, and added a privacy policy page and a terms and conditions page. We never use AI-slop photos, AI-slop copy, cursor animation, or fake customer counters. And most importantly, make no mistakes.
+Apply these requirements throughout the website.
+Use specific, purposeful copy that describes the game and tells the player what to do.
+Do not add fabricated testimonials, user counts, ratings, player statistics, or other misleading claims.
+Do not use emoji as interface icons. Use consistent, restrained SVG icons or CSS-drawn symbols where appropriate. The game may use actual illustrated objects such as keys and treasure, but these must be part of the designed environment rather than emoji substitutes.
+Do not use purple gradients, generic AI-generated stock imagery, animated cursors, fake loading sequences, or excessive scroll-triggered effects.
+Do not add a "Made with AI" badge to the finished website.
+Add a custom favicon that matches the game's identity.
+Prepare a privacy policy page and a terms and conditions page. Keep their content consistent with the actual implementation. Do not invent claims about data collection, security, legal compliance, or third-party services.
+A custom domain must be connected before the website is considered launched. Do not pretend that a domain has been purchased, configured, or connected if that has not actually happened.
+If the development environment requires external deployment settings, explain the remaining steps clearly instead of claiming they have already been completed.
+Do not sacrifice functionality, readability, or accessibility for visual polish.
+18. ORIGINALITY AND CREATIVE DIRECTION
+I want the game to feel genuinely original.
+Invent an interconnected world, distinctive locations, memorable environmental details, creative puzzle mechanics, satisfying key-and-door progression, and meaningful rewards.
+Do not simply reproduce a generic escape-room template with the topic names changed.
+Do not copy an existing game's distinctive characters, artwork, or proprietary assets.
+Use the supplied aesthetic and syllabus as the foundation for original work.
+The map, locations, puzzles, inventory items, treasure system, animations, and final restoration sequence should feel like parts of one carefully designed experience.
+Create small moments of discovery throughout the world. A clue might be hidden in an object, a mechanism might reveal a new route, or a visual detail might help the player reason about a concept.
+Keep all such discoveries fair, purposeful, and connected to the actual syllabus.
+The game must be educational first, but it should never feel like an ordinary assignment disguised with a few animations.
+19. IMPLEMENTATION WORKFLOW
+Follow this workflow rather than generating a superficial mockup.
+Phase 1: Plan the world
+Design the map, six locations, five puzzle chambers per location, treasure chambers, inventory items, learning journal, and final Memory Vault.
+Invent the actual puzzles independently. Ensure full syllabus coverage and a sensible difficulty progression.
+Phase 2: Establish the visual system
+Implement the original cream, soft-white, sage-green, teal, and brass-gold aesthetic.
+Build the shared room environment, map, doors, keys, chest, inventory, panels, typography, and animation system.
+Phase 3: Implement the game engine
+Create reliable state management, puzzle validation, key collection, door unlocking, location progression, scoring, hints, journal entries, and local persistence.
+Phase 4: Build all locations
+Implement all six locations with five distinct puzzles each and a dedicated treasure chamber for every location.
+Do not leave placeholder questions, dummy rooms, or unfinished mechanics.
+Phase 5: Build the final vault
+Implement the complete-game requirement, final restoration challenge, treasure reveal, and victory screen.
+Phase 6: Test the entire adventure
+Play through the game from beginning to end.
+Fix broken navigation, incorrect puzzle answers, state inconsistencies, layout problems, animation bugs, and accessibility issues.
+Phase 7: Prepare for deployment
+Add the favicon, privacy policy, terms and conditions, and appropriate deployment instructions.
+Clearly distinguish features already implemented from external deployment tasks that still require action.
+20. FINAL DELIVERABLE
+Deliver the complete working game, not just a design concept or a partial prototype.
+The finished experience must contain:
+A polished opening screen.
+An illustrated, interactive six-location world map.
+Six complete syllabus-based locations.
+Five original, functional puzzles per location.
+Thirty collectible keys.
+Thirty individually unlockable puzzle doors.
+Six location treasure chambers.
+A persistent inventory and supply chest.
+A progressive hint system.
+A functional learning journal.
+Accurate scoring and progress tracking.
+Animated room transitions and key collection.
+A final Memory Vault that unlocks after all six locations are complete.
+A meaningful final restoration sequence and victory screen.
+Responsive desktop and mobile layouts.
+Local progress saving where implemented.
+A matching favicon.
+Privacy policy and terms and conditions pages.
+Clear deployment instructions and honest reporting of anything still required before launch.
+Use sensible creative judgment for details not explicitly specified. Do not stop to ask me to approve every small design decision.
+Do not replace the full adventure with a simplified demonstration.
+Do not omit any syllabus topic.
+Do not hardcode a set of generic quiz questions in place of original interactive puzzles.
+Do not remove the established visual identity.
+Do not claim that a feature works unless it has actually been implemented and tested.
+The final result should be a complete, original, visually sophisticated, genuinely playable COA learning adventure called THE MEMORY VAULT, with an interconnected world, 30 creative puzzles, 30 keys, six treasures, and one ultimate vault waiting to be opened.
+Make no mistakes. Build the actual game.
